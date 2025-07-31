@@ -36,7 +36,7 @@ def draw_bar_plot():
     df_bar['year'] = df_bar.index.year
     df_bar['month'] = df_bar.index.month_name()
     ax.legend(title='Years')
-    sns.barplot(x='month', y='value', hue='year', data=df_bar,
+    sns.barplot(x='year', y='value', hue='month', data=df_bar,
                 palette='viridis', ax=ax)
 
 
